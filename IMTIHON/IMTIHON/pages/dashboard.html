@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <section id="dashboard">
+        <div class="container">
+            <div class="wrapper">
+                <div class="sidebar">
+                    <div>
+                        <h2 class="dash_title">Dashboard</h2>
+                    </div>
+                    <div>
+                        <a class="sign_dash" href="../index.html">Sign Out?</a>
+                    </div>
+                </div>
+                <div class="form">
+                    <p class="title">Create New Post</p>
+
+                    <form id="addForm">
+
+                        <div>
+                            <label for="post">Post title</label>
+                            <input required id="postTitle" type="text">
+                        </div>
+
+                        <div class="input">
+                            <div class="post_img">
+                                <label for="input_img">Post image</label>
+                                <input required id="inputImage" type="url">
+                            </div>
+                            <div class="post-image-wrapper">
+                                <label for="input-tag">Post tag</label>
+                                <input required id="inputTag" type="text">
+                            </div>
+                            <div>
+                                <input id="cubic" type="text">
+                            </div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="description">Post description</label>
+                            <textarea required id="description" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button type="submit" id="createBtn">Create Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script/dashboard.js"></script>
+</body>
+
+</html>
